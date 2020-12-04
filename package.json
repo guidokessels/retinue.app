@@ -3,18 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@ant-design/icons": "^4.2.2",
+    "@ant-design/icons": "^4.3.0",
     "@retinue/databank": "github:retinue-app/databank#gh-pages",
-    "@testing-library/jest-dom": "^5.11.5",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "antd": "^4.7.3",
+    "antd": "^4.9.1",
     "axios": "^0.21.0",
     "prando": "^5.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -40,13 +36,17 @@
     ]
   },
   "devDependencies": {
-    "@hot-loader/react-dom": "^17.0.0",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
+    "@hot-loader/react-dom": "^17.0.1",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "@types/react": "^16.14.2",
+    "@types/react-dom": "^16.9.10",
     "node-sass": "^4.14.1",
     "react-app-rewire-hot-loader": "^2.0.1",
     "react-app-rewired": "^2.1.6",
     "react-hot-loader": "^4.13.0",
-    "typescript": "^4.0.5"
+    "react-scripts": "4.0.0-next.98",
+    "typescript": "^4.1.2"
   }
 }
