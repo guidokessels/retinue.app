@@ -9,6 +9,7 @@ import {
   useLocation,
 } from 'react-router-dom';
 import './App.scss';
+import Lists from './views/Lists';
 
 function Nav() {
   const history = useHistory();
@@ -16,7 +17,7 @@ function Nav() {
   const [selected, setSelected] = useState<string[]>([]);
   useEffect(() => {
     setSelected(
-      [location.pathname.startsWith('/build') ? 'build' : ''].filter((i) => i),
+      [location.pathname.startsWith('/lists') ? 'lists' : ''].filter((i) => i),
     );
   }, [location]);
   function navigateIfNewLink(path: string) {
@@ -28,8 +29,8 @@ function Nav() {
     <Menu theme="dark" selectedKeys={selected}>
       <Menu.Item
         icon={<UnorderedListOutlined />}
-        key="build"
-        onClick={() => navigateIfNewLink('/build')}
+        key="lists"
+        onClick={() => navigateIfNewLink('/lists')}
       >
         List Builder
       </Menu.Item>
@@ -75,7 +76,12 @@ export default function App() {
               <Route exact path="/">
                 Home
               </Route>
-              <Route path="/build">Build</Route>
+              <Route exact path="/lists">
+                <Lists />
+              </Route>
+              <Route exact path="/lists/new">
+                Test
+              </Route>
             </Switch>
           </Layout.Content>
         </Layout>
